@@ -1,0 +1,20 @@
+#################
+INSTRUCTIONS
+#################
+
+During this exercise, you will need to implement a shopping cart for an online seed store.  The application has 7 pages:
+
+* The main page of the site (index.png) is the Seed Catalog page.  It displays a list of links to the various product pages.  For instance, if you click on Radishes, you will see the product page for radishes.  The main page also has a link to view the current contents of the shopping cart.
+
+* The shopping cart page shows the current content of the shopping cart (shopping_cart.png).  It also shows a link to return to the seed catalog.
+
+* There is one product page for each of the 5 different seed types (product_page.png).  Each product page displays a picture of the product and provides a form that allows the user to add the product to the shopping cart.  If the user clicks "Add to cart", the product is added to the cart and the user is returned to the seed catalog page.
+
+
+##########
+HINTS
+##########
+
+* You should start by designing and implementing an object model for your shopping cart.  This is a good opportunity to practice TDD.
+
+* Use the HttpSession to store your shopping cart
