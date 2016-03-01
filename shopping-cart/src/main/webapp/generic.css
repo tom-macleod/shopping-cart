@@ -1,0 +1,14 @@
+body {
+	background-image: url("img/green.jpg");
+	font-family: Arial;
+	color: #663300;
+}
+
+.page {
+	background-color: #99CC00;
+	width: 330px;
+	padding: 10px;
+	border-radius: 10px;
+	border: 2px solid #006600;
+}
+
