@@ -6,15 +6,28 @@ import java.util.List;
 public class Cart {
 
 	private List<Product> productList = new ArrayList<>();
-	
+
 	public List<Product> getProductList() {
 		return productList;
 	}
 
 	public void addProduct(Product product) {
-		productList.add(product);
+		if(productList.isEmpty()) {
+			productList.add(product);
+		} else {
+			boolean shoot = true;
+			for(Product p : productList) {
+				if(p.getName().equals(product.getName())) {
+					p.setQuantity(p.getQuantity()+product.getQuantity());
+					shoot = false;
+				} 
+			}
+			if(shoot) {
+				productList.add(product);
+			}
+		}
 	}
-	
+
 	public Integer getTotalValue() {
 		Integer totalValue = 0;
 		for(Product product : productList) {
@@ -24,6 +37,7 @@ public class Cart {
 		}
 		return totalValue;
 	}
+	
 	
 
 }

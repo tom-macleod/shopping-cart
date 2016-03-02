@@ -36,7 +36,7 @@
 			<td colspan="3" id="long">Total</td>
 			<td>$<%= theCart.getTotalValue() %></td>
 	</table>
-	
+		<p><a href="index.html"><<< Return to catalog</a></p>	
 	</div>
 	
 	</body>
