@@ -46,7 +46,7 @@ public class CartServlet extends HttpServlet {
     		tempCarrot.setQuantity(tempCarrot.getQuantity()+carrotsQuantity);
     	} else {
     		Integer carrotsQuantity = Integer.parseInt(request.getParameter("carrotsQuantity"));
-    		Carrot theCarrot = new Carrot("Carrot", "$3", carrotsQuantity);
+    		Carrot theCarrot = new Carrot("Carrot", "3", carrotsQuantity);
     		addToCart(request, response, theCarrot);
     	}
     	useDispatcher(request, response, "/carrot.jsp");
@@ -60,7 +60,7 @@ public class CartServlet extends HttpServlet {
     		tempPepper.setQuantity(tempPepper.getQuantity()+peppersQuantity);
     	} else {
     		Integer peppersQuantity = Integer.parseInt(request.getParameter("pepperQuantity"));
-    		Pepper thePepper = new Pepper("Pepper", "$5", peppersQuantity);
+    		Pepper thePepper = new Pepper("Pepper", "5", peppersQuantity);
     		addToCart(request, response, thePepper);
     	}
     	useDispatcher(request, response, "/peppers.jsp");
@@ -74,7 +74,7 @@ public class CartServlet extends HttpServlet {
     		tempCucumber.setQuantity(tempCucumber.getQuantity()+cucumbersQuantity);
     	} else {
     		Integer cucumbersQuantity = Integer.parseInt(request.getParameter("cucumbersQuantity"));
-    		Cucumber theCucumber = new Cucumber("Cucumber", "$8", cucumbersQuantity);
+    		Cucumber theCucumber = new Cucumber("Cucumber", "8", cucumbersQuantity);
     		addToCart(request, response, theCucumber);
     	}
     	useDispatcher(request, response, "/cucumber.jsp");
@@ -88,7 +88,7 @@ public class CartServlet extends HttpServlet {
     		tempTomatoe.setQuantity(tempTomatoe.getQuantity()+tomatoesQuantity);
     	} else {
     		Integer tomatoesQuantity = Integer.parseInt(request.getParameter("tomatoesQuantity"));
-    		Tomatoe theTomatoe = new Tomatoe("Tomatoe", "$8", tomatoesQuantity);
+    		Tomatoe theTomatoe = new Tomatoe("Tomatoe", "4", tomatoesQuantity);
     		addToCart(request, response, theTomatoe);
     	}
     	useDispatcher(request, response, "/tomatoes.jsp");
@@ -102,7 +102,7 @@ public class CartServlet extends HttpServlet {
     		tempRadish.setQuantity(tempRadish.getQuantity()+radishesQuantity);
     	} else {
     		Integer radishesQuantity = Integer.parseInt(request.getParameter("radishesQuantity"));
-    		Radish theRadish = new Radish("Radish", "$8", radishesQuantity);
+    		Radish theRadish = new Radish("Radish", "18", radishesQuantity);
     		addToCart(request, response, theRadish);
     	}
     	useDispatcher(request, response, "/radish.jsp");

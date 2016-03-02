@@ -30,5 +30,12 @@ public abstract class Product {
 		this.quantity = quantity;
 	}
 	
+	public String getTotalCost() {
+		Integer priceInt = Integer.parseInt(price);
+		Integer totalCostInt = priceInt * quantity;
+		String totalCost = totalCostInt.toString();
+		return totalCost;
+	}
+	
 
 }

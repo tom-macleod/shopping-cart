@@ -1,0 +1,27 @@
+body {
+	background-image: url("img/green.jpg");
+	font-family: Arial;
+	color: #663300;
+}
+
+.page {
+	background-color: #99CC00;
+	width: 360px;
+	padding: 20px;
+	border-radius: 10px;
+	border: 2px solid #006600;
+}
+
+th {
+	border: 1px solid #006600;
+	text-align: center;
+}
+
+td {
+	border: 1px solid #006600;
+	text-align: center;
+}
+
+#long {
+	text-align: right;
+}
