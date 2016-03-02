@@ -44,35 +44,35 @@ public class CartServlet extends HttpServlet {
     
     private void doCarrot(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     	Integer carrotsQuantity = Integer.parseInt(request.getParameter("carrotsQuantity"));
-    	Carrot theCarrot = new Carrot("Carrot", "3", carrotsQuantity);
+    	Product theCarrot = new Product("Carrot", "3", carrotsQuantity);
     	addToCart(request, response, theCarrot);
     	useDispatcher(request, response, "/carrot.jsp");
     }
     
     private void doPepper(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     	Integer peppersQuantity = Integer.parseInt(request.getParameter("pepperQuantity"));
-    	Pepper thePepper = new Pepper("Pepper", "5", peppersQuantity);
+    	Product thePepper = new Product("Pepper", "5", peppersQuantity);
     	addToCart(request, response, thePepper);
     	useDispatcher(request, response, "/peppers.jsp");
     }
     
     private void doCucumber(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     	Integer cucumbersQuantity = Integer.parseInt(request.getParameter("cucumbersQuantity"));
-    	Cucumber theCucumber = new Cucumber("Cucumber", "8", cucumbersQuantity);
+    	Product theCucumber = new Product("Cucumber", "8", cucumbersQuantity);
     	addToCart(request, response, theCucumber);
     	useDispatcher(request, response, "/cucumber.jsp");
     }
     
     private void doTomatoe(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     	Integer tomatoesQuantity = Integer.parseInt(request.getParameter("tomatoesQuantity"));
-    	Tomatoe theTomatoe = new Tomatoe("Tomatoe", "4", tomatoesQuantity);
+    	Product theTomatoe = new Product("Tomatoe", "4", tomatoesQuantity);
     	addToCart(request, response, theTomatoe);
     	useDispatcher(request, response, "/tomatoes.jsp");
     }
     
     private void doRadish(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     	Integer radishesQuantity = Integer.parseInt(request.getParameter("radishesQuantity"));
-    	Radish theRadish = new Radish("Radish", "18", radishesQuantity);
+    	Product theRadish = new Product("Radish", "18", radishesQuantity);
     	addToCart(request, response, theRadish);
     	useDispatcher(request, response, "/radish.jsp");
     }

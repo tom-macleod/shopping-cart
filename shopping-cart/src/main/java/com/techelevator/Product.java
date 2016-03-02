@@ -1,6 +1,6 @@
 package com.techelevator;
 
-public abstract class Product {
+public class Product {
 	
 	private String name;
 	private String price;
