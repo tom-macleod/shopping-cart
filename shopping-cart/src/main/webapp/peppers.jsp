@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>Carrots</title>
+		<title>Bell Peppers</title>
 		<link rel="stylesheet" type="text/css" href="generic.css" />
 	</head>
 
@@ -12,13 +12,14 @@
 	
 	<div class="page">
 	
-	<h2>Carrots</h2>
+	<h2>Bell Peppers</h2>
 	
-	<img alt="Carrots" src="img/carrots.jpg">
-	<p>Price: $3</p>
+	<img alt="Bell Peppers" src="img/peppers.jpg">
+	<p>Price: $5</p>
 	<form method="POST" action="cart">
-		<label for="carrotsQuantity">Quantity: </label>
-		<input type="text" name="carrotsQuantity" id="carrotsQuantity" />
+	<input type="hidden" name="seedType" value="pepper" />
+		<label for="pepperQuantity">Quantity: </label>
+		<input type="text" name="pepperQuantity" id="pepperQuantity" />
 		<input type="submit" value="Add To Cart" />
 	</form>
 	

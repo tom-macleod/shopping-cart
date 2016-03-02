@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>Heirloom Tomatoes</title>
+		<title>Carrots</title>
 		<link rel="stylesheet" type="text/css" href="generic.css" />
 	</head>
 
@@ -12,13 +12,14 @@
 	
 	<div class="page">
 	
-	<h2>Heirloom Tomatoes</h2>
+	<h2>Carrots</h2>
 	
-	<img alt="Heirloom Tomatoes" src="img/tomatoes.jpg">
-	<p>Price: $4</p>
+	<img alt="Carrots" src="img/carrots.jpg">
+	<p>Price: $3</p>
 	<form method="POST" action="cart">
-		<label for="tomatoesQuantity">Quantity: </label>
-		<input type="text" name="tomatoesQuantity" id="tomatoesQuantity" />
+		<input type="hidden" name="seedType" value="carrot" />
+		<label for="carrotsQuantity">Quantity: </label>
+		<input type="text" name="carrotsQuantity" id="carrotsQuantity" />
 		<input type="submit" value="Add To Cart" />
 	</form>
 	
